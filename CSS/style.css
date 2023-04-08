@@ -1,0 +1,22 @@
+.event{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 30px; 
+}
+
+.festival { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 30px
+}
+
+.tomb,
+.dragon,
+.lunar, 
+.autumn { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    gap: 100px; 
+
+}
