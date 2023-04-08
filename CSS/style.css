@@ -1,9 +1,56 @@
+/* styling for skip to content */
+.skip{ 
+    position: absolute; 
+    top: -10000px;
+    font-family: "Candara";
+    background-color: lavenderblush; 
+    color:cornflowerblue; 
+    padding: 2px; 
+    text-decoration: none;
+    margin: 1   px; 
+}
+
+.skip:focus { 
+    position: static; 
+}
+
+
+/* styling for navigation */
+nav { 
+    background-color:bisque; 
+    font-family: "Optima"; 
+    font-size: 20px; 
+    margin: 5px 0px 5px 0px; 
+    padding: 10px
+}
+
+.nav { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+nav a { 
+    text-decoration: none; 
+    color:gray; 
+}
+
+nav a:hover{ 
+    color: plum; 
+}
+
+nav a:focus{ 
+    color: plum; 
+}
+
+/* styling for event page */
 .event{ 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-gap: 30px; 
 }
 
+/* styling for festival page  */
 .festival { 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
