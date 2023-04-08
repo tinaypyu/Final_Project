@@ -1,3 +1,7 @@
+body{ 
+    background-color: whitesmoke;
+}
+
 /* styling for skip to content */
 .skip{ 
     position: absolute; 
@@ -17,7 +21,7 @@
 
 /* styling for navigation */
 nav { 
-    background-color:bisque; 
+    background-color:darkgrey; 
     font-family: "Optima"; 
     font-size: 20px; 
     margin: 5px 0px 5px 0px; 
@@ -35,12 +39,41 @@ nav a {
     color:gray; 
 }
 
-nav a:hover{ 
-    color: plum; 
+nav a:hover, a:focus { 
+    color: rgb(25, 26, 44); 
+}
+    
+
+/* styling for container */
+/* /* .container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* grid-template-rows: 1fr 1fr 1fr;  
+} */
+
+/* styling for page title */
+
+h1 { 
+    grid-column: 1/span 3; 
+    font-size: 40px; 
+    color:dimgray; 
+    padding: 3px 0px 7px 1px; 
 }
 
-nav a:focus{ 
-    color: plum; 
+/* styling for page section titles */
+
+h2 { 
+    grid-column: 1/span 3; 
+    font-size: 15px; 
+    color:darkgrey; 
+    padding: 2px 0px 5px 1px; 
+}
+
+/* styling for descriptions */
+
+h3 { 
+    color:slategrey; 
+    margin: 10px 0px 2px 0px ; 
 }
 
 /* styling for event page */
@@ -57,13 +90,20 @@ nav a:focus{
     grid-gap: 30px
 }
 
-.tomb,
+.tomb, 
 .dragon,
 .lunar, 
 .autumn { 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between;
-    gap: 100px; 
+    grid-column: 1/span 3; 
+}
 
+.tomb-img, 
+.dragon-img, 
+.autumn-img, 
+.lunar-img
+{ 
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px; 
+    align-items: center; 
 }
