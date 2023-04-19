@@ -7,88 +7,101 @@
     <link rel="icon" type="image/png" href="images/logo.png"/>
     <link rel="stylesheet" type="text/css" href="CSS/html5reset.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="js/final.js"></script>
+
     <title>Events</title>
 </head>
 <body>
     <a href="#main" class="skip">Skip to Content</a>
     <header>
-        <img src = "Images/logo.png" alt = "Logo of TWSA" id = headerImg>
-        <nav>
+        <nav class = bar>
+            <img src = "Images/logo no back.png" alt = "Logo of TWSA" id = headerImg> 
+            <!-- for hamburger nav -->
+            <div class = "ham" tabindex = 0>
+                <span class = "line"></span>
+                <span class = "line"></span>
+                <span class = "line"></span>
+            </div>
+            <!-- for reg nav -->
             <ul class = nav>
                 <li><a href = "index.html">HOME</a></li>
-                <li class="acive"><a href = "events.html">EVENTS</a></li>
+                <li class="current"><a href = "events.html">EVENTS</a></li>
                 <li><a href = "festivals.html">FESTIVALS</a></li>
-                <li><a href = "contact.html">CONTACT US</a></li>
+                <li><a href = "contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <main class = "container" id = "main">
-        <h1>Our Events</h1>
+    <main class = "eventContainer" id = "main">
+        <div class = "eventsIntro">
+            <h1 tabindex = 0>Events</h1>
+            <h2 tabindex = 0> Find events that TWSA has organized in the past. </h2>
+        </div>
+        
         <div class = event >
             <div class = aprilEvent id = events> 
-                <h2>April Tomb Sweeping Day Event</h2>
+                <h3> April Tomb Sweeping Day Event</h3>
                     <img src = "Images/Events/April.png" alt = "illustration of a woman making a spring roll " width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro introintroi ntrointr ointr ointroin trointrointr ointrointrointroi ntrointrointro introintr ointrointroin trointrointro introintrointrointr ointrointro introintrointrointroi ntrointroi ntroint rointrointrointroin trointroin trointrointrointrointrointro introintrointro </h4>
             </div>
 
             <div class = wonderland id = events> 
-                <h2>Winter Wonderland Masquerade Party</h2>
+                <h3>Winter Wonderland Masquerade Party</h3>
                     <img src = "Images/Events/Dec 22.jpg" alt = "graphic featuring a white mask made for Winter Wonderland Masquerade Party" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
 
             <div class = single id = events>
-                <h2>TWSA's Single Inferno</h2>
+                <h3>TWSA's Single Inferno</h3>
                     <img src = "Images/Events/Feb 2022.png" alt = "a mostly pink illustration with a broken heart and a cat and a rabbit holding hands" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
 
             <div class = mahjong23 id = events>
-                <h2>2023 Mahjong Tournament</h2>
+                <h3>2023 Mahjong Tournament</h3>
                     <img src = "Images/Events/Jan 2023.jpg" alt = "grahpic with mahjong tiles lining the top and bottom" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
 
             <div class = mahjong22 id = events>
-                <h2>2022 Mahjong Tournament</h2>
+                <h3>2022 Mahjong Tournament</h3>
                     <img src = "Images/Events/January22.png" alt = "graphic of four mahjong tiles in front of a background of clouds framed by a green, decorated border" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
         
             <div class = freshmen id = events> 
-                <h2>Freshmen Dinner</h2>
+                <h3>Freshmen Dinner</h3>
                     <img src = "Images/Events/july .jpg" alt = "illustration of two bears in a yellow michigan shirt toasting under yellow light" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
         
             <div class = info id = events> 
-                <h2>Class of 2026 Freshmen Info Session</h2>
+                <h3>Class of 2026 Freshmen Info Session</h3>
                     <img src = "Images/Events/June 22.PNG" alt = "an illustration of an University of Michigan ID card with the ID photo being a bear in yellow michigan shirt" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
         
             <div class = wellness id = events> 
-                <h2>Mental Wellness Workshop</h2>
+                <h3>Mental Wellness Workshop</h3>
                     <img src = "Images/Events/Nov .jpg" alt = "illustration of blue sky, two mountains, and a sheep leaping over a fence" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
         
             <div class= movie id = events> 
-                <h2>Movie Night</h2>
+                <h3>Movie Night</h3>
                     <img src = "Images/Events/nov-movie.jpg" alt = "illustration of a personified white and red popcorn cup holding a drink" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div> 
             
             <div class = foodie id = events> 
-                <h2>Foodie</h2>
+                <h3>Foodie</h3>
                     <img src = "Images/Events/Sept 2022.png" alt = "illustration of a gray bear sitting in a rice bucket filled with rice and a rice spoon sticking out" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
         
             <div class = meeeting id = events> 
-                <h2>Mass Meeting</h2>
+                <h3>Mass Meeting</h3>
                     <img src = "Images/Events/Sept - mass.png" alt = "illustration of a personified silhouette of Taiwan holding a Taiwanese flag and a bubble tea" width = 350/>
-                    <h3>brief event intro </h3>
+                    <h4>brief event intro </h4>
             </div>
             
         </div>

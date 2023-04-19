@@ -7,68 +7,78 @@
     <link rel="icon" type="image/png" href="images/logo.png"/>
     <link rel="stylesheet" type="text/css" href="CSS/html5reset.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="js/final.js"></script>
     <title>Festivals</title>
 </head>
 <body>
     <a href="#main" class="skip">Skip to Content</a>
     <header>
-        <img src = "Images/logo.png" alt = "Logo of TWSA" id = headerImg> 
-        <nav>
+        
+        <nav class = bar>
+            <img src = "Images/logo no back.png" alt = "Logo of TWSA" id = headerImg> 
+            <!-- for hamburger nav -->
+            <div class = "ham" tabindex = 0>
+                <span class = "line"></span>
+                <span class = "line"></span>
+                <span class = "line"></span>
+            </div>
+            <!-- for reg nav -->
             <ul class = nav>
-
                     <li><a href = "index.html">HOME</a></li>
                     <li><a href = "events.html">EVENTS</a></li>
-                    <li class="acive"><a href = "festivals.html">FESTIVALS</a></li>
-                    <li><a href = "contact.html">CONTACT US</a></li>
+                    <li class="current"><a href = "festivals.html">FESTIVALS</a></li>
+                    <li><a href = "contact.html">CONTACT</a></li>
 
                 
             </ul>
         </nav>
     </header>
     <main class = "container" id = "main">
+        <h1>Festivals in Taiwan</h1>
+        <h2> Learn more about festivals in Taiwan! </h2>
         <div class= festival>
 
-        <h1>Festivals in Taiwan</h1>
-             <div class = tomb>
-                <h2>Tomb Sweeping Day</h2>
-                <div class = tomb-img>
-                    <img src = "Images/festivals/tomb2.png" alt = "Photo of a family of three during Tomb Sweeping Day" width = 350 />
-                    <img src = "Images/festivals/tomb.jpg" alt = "an illuatration of rainy day with a boat sitting in a pond and three birds flying in the sky" width = 350 height = 350/>
-                    <img src = "Images/festivals/tomb1.jpg" alt = "an illustration of tomb sweeping day elements such as steamed cupacake, pork, duck, and steamed bun" width = 350 height = 350/>
-                </div>
-                <h3>(description of holiday)</h3>
-                
+             <div class = tomb id = fest>
+                <h3>Tomb Sweeping Day</h3>
+                <!-- <div class = fest-img> -->
+                    <img src = "Images/festivals/tomb2.png" alt = "Photo of a family of three during Tomb Sweeping Day" width = 350 id = imgT />
+                    <img src = "Images/festivals/tomb.jpg" alt = "an illuatration of rainy day with a boat sitting in a pond and three birds flying in the sky" width = 350 height = 350 id = imgT/>
+                    <img src = "Images/festivals/tomb1.jpg" alt = "an illustration of tomb sweeping day elements such as steamed cupacake, pork, duck, and steamed bun" width = 350 height = 350 id = imgT/>
+                <!-- </div> -->
+                <h4>(description of holiday)</h4>
+    
             </div> 
-            
-            <div class = dragon> 
-                <h2>Dragon Boat Festival</h2>
-                <div class = dragon-img>
 
+            <div class = lunar id = fest> 
+                <h3>Lunar New Year</h3>
+                <!-- <div class = lunar-img> -->
+                    <img src = "Images/festivals//lunar food.jpg" alt = "Various kind of food enjoyed by people during Lunar New Year such as fish, dumplings, and mandarins" width = 350 height = 350/>
+                    <img src = "Images/festivals/lunar new year - rabbit .jpeg" alt = "an illustration of a rabbit with a lunar new year- themed background" width = 350 height = 350/>
+                    <img src = "Images/festivals/lunar new year -1.webp" alt = "an illustration filled with lunar new year elements such as a lantern, red envelope, a mandarin, and a firecracker" width = 350 height = 350/>
+                <!-- </div> -->
+                <h4>(description of holiday)</h4>
+
+            </div>
+            
+            <div class = dragon id = fest> 
+                <h3>Dragon Boat Festival</h3>
+                <!-- <div class = dragon-img> -->
                     <img src = "Images/festivals/dragon boat.jpg" alt = "Illustration of a dragon boat with a crew of 4 people" width = 350 height = 350/>
                     <img src = "Images/festivals/dragon food.jpg" alt = "An illustration of two rice dumplings wrapped in green leaves and one unwrapped"width = 350 height = 350/>
-                </div>  
-                <h3>(description of holiday)</h3>
+                <!-- </div>   -->
+                <h4>(description of holiday)</h4>
 
             </div>
      
-            <div class = lunar> 
-                <h2>Lunar New Year</h2>
-                <div class = lunar-img>
-                    <img src = "Images/festivals//lunar food.jpg" alt = "Various kind of food enjoyed by people during Lunar New Year such as fish, dumplings, and mandarins" width = 350 height = 350/>
-                    <img src = "Images/festivals/lunar new year - rabbit .jpeg" alt = "an illustration of a rabbit with a lunar new year- themed background" width = 350 height = 350/>
-                 <img src = "Images/festivals/lunar new year -1.webp" alt = "an illustration filled with lunar new year elements such as a lantern, red envelope, a mandarin, and a firecracker" width = 350 height = 350/>
-                </div>
-                <h3>(description of holiday)</h3>
-
-            </div>
+           
             
-            <div class = autumn> 
-                <h2>Mid Autumn Festival</h2>
-                <div class = autumn-img>
+            <div class = autumn id = fest> 
+                <h3>Mid Autumn Festival</h3>
+                <!-- <div class = autumn-img> -->
                     <img src = "Images/festivals/mid autumn 2 .jpeg" alt = "an illustration of the back of two white rabbits sitting in front of a yellow moon"width = 350 height = 350/>
                     <img src = "Images/festivals/mid autumn food.jpeg" alt = "an illustration of a moon cake cut into 2 halves with pink flowers in the background" width = 350 height = 350 />
-                </div>
-                <h3>(description of holiday)</h3>
+                <!-- </div> -->
+                <h4>(description of holiday)</h4>
 
             </div>
             

@@ -1,5 +1,5 @@
 body{ 
-    background-color: whitesmoke;
+    background-color: rgb(228, 229, 231);
 }
 
 /* styling for skip to content */
@@ -7,42 +7,347 @@ body{
     position: absolute; 
     top: -10000px;
     font-family: "Candara";
-    background-color: lavenderblush; 
+    background-color: darkgray; 
     color:cornflowerblue; 
     padding: 2px; 
     text-decoration: none;
-    margin: 1   px; 
-}
+    margin: 1px; 
+}   
 
 .skip:focus { 
     position: static; 
 }
 
+h1:focus 
 
-/* styling for navigation */
-nav { 
-    background-color:darkgrey; 
-    font-family: "Optima"; 
+header { 
+    /* justify-content: space-between; 
+    align-items: center;  */
+    background-color: rgb(207, 205, 205);
+    margin: 0px 0px 20px 0px; 
+}
+
+li { 
+    list-style: none; 
+    margin: 10%; 
+
+}
+
+.current { 
+    color:black; 
+    font-weight: bold; 
+}
+
+a { 
+    text-decoration: none; 
+    color:rgb(99, 96, 96); 
+}
+
+.bar { 
+    display: flex; 
+    min-height: 70px; 
+    justify-content: space-between; 
+    align-items:center; 
+    padding: 0px 30px 0px 5px; 
+}
+
+
+.bar a:hover, a:focus { 
+    color: rgb(25, 26, 44); 
+} 
+
+.ham { 
+    display: block; 
+    cursor: pointer; 
+}
+
+/* styling for the hamburger icon  */
+.line { 
+    display: block; 
+    width: 30px; 
+    height: 3px; 
+    margin: 5px; 
+    transition: all 0.2s ease-in-out; 
+    background-color: rgb(99, 96, 96); 
+}
+
+/* hamburger transition into an x  */
+.ham.active .line:nth-child(2){ 
+    display: none; 
+}
+
+.ham.active .line:nth-child(1){ 
+    transform: translateY(5px) translateX(-4px) rotate(45deg)
+}
+
+.ham.active .line:nth-child(3){ 
+    transform: translateX(-5px) translateY(-3px) rotate(-45deg)
+}
+
+
+.nav { 
+    position: fixed; 
+    right: -100%; 
+    flex-direction: column; 
+    background-color: rgb(207, 205, 205); 
+    width: 100%; 
+    text-align: center; 
+    transition: 1s; 
+    top: 60px; 
+    height: 80%; 
+}
+
+.nav.active { 
+    right: 0%; 
+}
+
+
+/* STYLING FOR EVENTS PAGE */
+#eventH1{ 
+    margin: 30px; 
+}
+
+
+.event { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(11, 1fr); 
+    row-gap: 40px; 
+    align-items: center; 
+    justify-items: center; 
+}
+
+#events { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.eventsIntro { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+
+}
+
+/* styling for page titles  */
+h1 { 
+    font-size: 40px; 
+    color:dimgray; 
+    margin: 30px 0px 10px 0px;  
+    text-align: center; 
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif
+}
+
+/* styling for secondary title  */
+h2{ 
+    font-size: 15px; 
+    color:rgb(45, 45, 45); 
+    padding: 10px 0px 40px 1px; 
+    text-align: center; 
+}
+
+/* styling for event/festival names  */
+h3 { 
+    color:slategrey; 
     font-size: 20px; 
-    margin: 5px 0px 5px 0px; 
-    padding: 10px
+    margin: 10px 0px 2px 0px ;
+    text-align: center; 
+}
+
+/* styling for description */
+h4{ 
+    color:rgb(45, 45, 45); 
+    text-align: center; 
+}
+
+/* STYLING FOR FESTIVAL PAGE */
+
+.festival { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(4, 1fr); 
+    row-gap: 10px; 
+    align-items: center; 
+    justify-items: center; 
+}
+
+#fest { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.socialLinks { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 5px; 
+    justify-content: center; 
+}
+
+
+
+@media screen and (min-width: 768px){ 
+
+.ham { 
+    display: none; 
 }
 
 .nav { 
     display: flex; 
+    position: absolute; 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    top: 0px; 
+    right: 0; 
+    width: 100%; 
+    text-align: end;
+    height: 70px;
+    align-items: center; 
+}
+
+li { 
+    display: inline; 
+ }
+
+.event { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(6, 1fr); 
+    row-gap: 40px; 
+    column-gap: 40px; 
+    align-items: start; 
+    justify-items: center; 
+}
+
+#events { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.festival { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(2, 1fr); 
+    align-items: start; 
+    row-gap: 70px; 
+} 
+
+.socialLinks { 
+    flex-direction: row; 
+}
+
+}
+
+
+
+/* display laptops */
+@media only screen and (min-width: 990px) { 
+.event { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: repeat(4, 1fr); 
+}
+
+.festival { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr  1fr; 
+    grid-template-rows: 1fr 1fr; 
+    align-items: start; 
+    column-gap: 20px; 
+} 
+
+
+
+}
+
+
+
+
+
+/* 
+.logo {
+    display: inline-block; 
+} 
+
+/* styling for navigation */
+/* nav { 
+    display: flex; 
+    background-color:white; 
+    font-family: "Optima"; 
+    font-size: 20px; 
+    /* margin: 5px 0px 5px 0px;  
+    padding: 10px
+} 
+
+ .ham { 
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ham span {
+    display: block;
+    background-color: darkgray;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ham span:nth-child(2) {
+    top: 40%;
+  }
+  
+  .ham span:nth-child(3) {
+    top: 60%;
+  }
+
+
+.regNav {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.regNav li {
+    margin: 0;
+    padding: 1px;
+  }
+
+
+
+ .nav { 
+    display: flex; 
     flex-direction: row;
     justify-content: space-around;  
-}
+ }  
 
-nav a { 
+.regNav a { 
     text-decoration: none; 
     color:gray; 
-}
+} */
 
-nav a:hover, a:focus { 
-    color: rgb(25, 26, 44); 
-}
-    
+
 
 /* styling for container */
 /* /* .container { 
@@ -53,46 +358,28 @@ nav a:hover, a:focus {
 
 /* styling for page title */
 
-h1 { 
-    grid-column: 1/span 3; 
-    font-size: 40px; 
-    color:dimgray; 
-    padding: 3px 0px 7px 1px; 
-}
+
 
 /* styling for page section titles */
 
-h2 { 
-    grid-column: 1/ -1; 
-    font-size: 15px; 
-    color:darkgrey; 
-    padding: 2px 0px 5px 1px; 
-}
+
 
 /* styling for descriptions */
 
-h3 { 
-    color:slategrey; 
-    margin: 10px 0px 2px 0px ; 
-}
+
 
 /* styling for event page */
-.event{ 
+/* .event{ 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-row-gap: 60px; 
     grid-column-gap: 40px; 
 
-}
+} */
 
 /* styling for festival page  */
-.festival { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-gap: 30px
-}
 
-.tomb, 
+/* .tomb, 
 .dragon,
 .lunar, 
 .autumn { 
@@ -112,16 +399,16 @@ h3 {
 
 img { 
     padding: 4px 4px 4px 4px; 
-}
+} */
 
 /* styling for each individual event layout */
-#events{ 
+/* #events{ 
     display:flex; 
     flex-direction: row; 
     gap: 10px; 
     align-items: center; 
     flex-wrap: wrap; 
-}
+} */
 
 /* styling for contacts page */
 .socials { 
@@ -129,27 +416,34 @@ img {
     grid-template-rows: 1fr 4fr; 
 }
 
-.socialLinks { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 10px; 
-    padding: 5px; 
-}
+
 
 .socialLinks a { 
     text-decoration: none;
-    color:slategrey; 
+    color:rgb(99, 96, 96); 
 }
 
 
 .socialLinks a:focus, a:hover {
-    color: rgb(182, 165, 249); 
+    color: rgb(25, 26, 44); 
 }
 
 #headerImg { 
-    height: 100px; 
+    height: 50px; 
 }
 
-header { 
+/* header { 
     background-color: white;
-}
+} */
+
+
+
+
+/* Display for tablets  */
+
+
+
+
+
+
+

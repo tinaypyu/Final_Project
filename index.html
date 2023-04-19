@@ -7,18 +7,27 @@
     <link rel="icon" type="image/png" href="images/logo.png"/>
     <link rel="stylesheet" type="text/css" href="CSS/html5reset.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="js/final.js"></script>
     <title>TWSA</title>
 </head>
 <body>
     <a href="#main" class="skip">Skip to Content</a>
     <header>
-        <img src = "Images/logo.png" alt = "Logo of TWSA" id = headerImg> 
-        <nav>
-            <ul class = nav>
-                <li class="acive"><a href = "#About">HOME</a></li>
+        
+        <nav class = bar>
+            <img src = "Images/logo no back.png" alt = "Logo of TWSA" id = headerImg> 
+            <!-- for hamburger nav -->
+            <div class = "ham" tabindex = 0>
+                <span class = "line"></span>
+                <span class = "line"></span>
+                <span class = "line"></span>
+            </div>
+            <!-- for reg nav -->
+            <ul class = "nav">
+                <li class="current"><a href = "#About">HOME</a></li>
                 <li><a href = "events.html">EVENTS</a></li>
                 <li><a href = "festivals.html">FESTIVALS</a></li>
-                <li><a href = "contact.html">CONTACT US</a></li>
+                <li><a href = "contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
