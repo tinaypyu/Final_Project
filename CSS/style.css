@@ -104,8 +104,7 @@ header {
     transition: 0.5s; 
 }
 
-.nav.active, 
-.ham:focus { 
+.nav.active { 
     right: 0%; 
 }
 
