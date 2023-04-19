@@ -14,7 +14,7 @@
 <body>
     <a href="#main" class="skip">Skip to Content</a>
     <header>
-        <nav class = bar>
+        <nav class = navBar>
             <img src = "Images/logo no back.png" alt = "Logo of TWSA" id = headerImg> 
             <!-- for hamburger nav -->
             <div class = "ham" tabindex = 0>
@@ -33,77 +33,112 @@
     </header>
     <main class = "eventContainer" id = "main">
         <div class = "eventsIntro">
-            <h1 tabindex = 0>Events</h1>
-            <h2 tabindex = 0> Find events that TWSA has organized in the past. </h2>
+            <h1>Events</h1>
+            <p> TWSA organizes multiple events every year! The following are some of the events that TWSA has had in the past.<p>
         </div>
+
+        <ul class = yearEvent>
+            <li><a href="#2023" >See events from 2023</a></li>
+            <li><a href="#2022" >See events from 2022</a></li>
+        </ul>
         
-        <div class = event >
-            <div class = aprilEvent id = events> 
-                <h3> April Tomb Sweeping Day Event</h3>
-                    <img src = "Images/Events/April.png" alt = "illustration of a woman making a spring roll " width = 350/>
-                    <h4>brief event intro introintroi ntrointr ointr ointroin trointrointr ointrointrointroi ntrointrointro introintr ointrointroin trointrointro introintrointrointr ointrointro introintrointrointroi ntrointroi ntroint rointrointrointroin trointroin trointrointrointrointrointro introintrointro </h4>
-            </div>
-
-            <div class = wonderland id = events> 
-                <h3>Winter Wonderland Masquerade Party</h3>
-                    <img src = "Images/Events/Dec 22.jpg" alt = "graphic featuring a white mask made for Winter Wonderland Masquerade Party" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
-
-            <div class = single id = events>
-                <h3>TWSA's Single Inferno</h3>
-                    <img src = "Images/Events/Feb 2022.png" alt = "a mostly pink illustration with a broken heart and a cat and a rabbit holding hands" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
-
-            <div class = mahjong23 id = events>
-                <h3>2023 Mahjong Tournament</h3>
+        <div class = event>
+            <h2 id = "2023"> 2023 Events</h2>
+            <div class = "events2023">
+                <div class = mahjong23 id = events>
                     <img src = "Images/Events/Jan 2023.jpg" alt = "grahpic with mahjong tiles lining the top and bottom" width = 350/>
-                    <h4>brief event intro </h4>
+                    <div id="eventText">
+                        <h3>2023 Mahjong Tournament</h3>
+                        <p>A TWSA well-loved tradition. After three rounds of intense competition, the final winner gets a sash that they get to keep for an entire year! </p>
+                    </div>    
+                </div>
             </div>
 
-            <div class = mahjong22 id = events>
-                <h3>2022 Mahjong Tournament</h3>
+
+            <h2 id = "2022"> 2022 Events</h2>
+            <div class = "events2022">
+                
+                <div class = mahjong22 id = events>
                     <img src = "Images/Events/January22.png" alt = "graphic of four mahjong tiles in front of a background of clouds framed by a green, decorated border" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
-        
-            <div class = freshmen id = events> 
-                <h3>Freshmen Dinner</h3>
-                    <img src = "Images/Events/july .jpg" alt = "illustration of two bears in a yellow michigan shirt toasting under yellow light" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
-        
-            <div class = info id = events> 
-                <h3>Class of 2026 Freshmen Info Session</h3>
-                    <img src = "Images/Events/June 22.PNG" alt = "an illustration of an University of Michigan ID card with the ID photo being a bear in yellow michigan shirt" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
-        
-            <div class = wellness id = events> 
-                <h3>Mental Wellness Workshop</h3>
-                    <img src = "Images/Events/Nov .jpg" alt = "illustration of blue sky, two mountains, and a sheep leaping over a fence" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
-        
+                    <div id="eventText">
+                        <h3>2022 Mahjong Tournament</h3>
+                        <p>A TWSA well-loved tradition. Also the first one that we had in the US after Covid. After three rounds of intense competition, the final winner gets a sash that they get to keep for an entire year! </p>
+                    </div>
+                </div>
+
+                <div class = single id = events>
+                    <img src = "Images/Events/Feb 2022.png" alt = "a mostly pink illustration with a broken heart and a cat and a rabbit holding hands" width = 350/>
+                    <div id="eventText">   
+                        <h3>TWSA's Single Inferno</h3>
+                        <p>Valentine's Day for single people. Of course, couples are also very welcomed! We had a series of valentine-themed games for everyone to enjoy and a prize in the end for the winners. </p>
+                    </div>     
+                </div>
+
+
             <div class= movie id = events> 
-                <h3>Movie Night</h3>
-                    <img src = "Images/Events/nov-movie.jpg" alt = "illustration of a personified white and red popcorn cup holding a drink" width = 350/>
-                    <h4>brief event intro </h4>
+                <img src = "Images/Events/nov-movie.jpg" alt = "illustration of a personified white and red popcorn cup holding a drink" width = 350/>
+                <div id="eventText">
+                    <h3>Movie Night</h3>
+                    <p> A great way to take a break from your studies a destress. We watched famous scary movie based on real historical events in Taiwan. </p>
+                </div>
             </div> 
-            
-            <div class = foodie id = events> 
-                <h3>Foodie</h3>
-                    <img src = "Images/Events/Sept 2022.png" alt = "illustration of a gray bear sitting in a rice bucket filled with rice and a rice spoon sticking out" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
-        
-            <div class = meeeting id = events> 
-                <h3>Mass Meeting</h3>
+
+                <div class = aprilEvent id = events> 
+                    <img src = "Images/Events/April.png" alt = "illustration of a woman making a spring roll " width = 350/>
+                    <div id="eventText">
+                        <h3> April Tomb Sweeping Day Event</h3>
+                        <p>We collaborated with the Hong Kong Student Association (HKSA) to organize an event for Tomb Sweeping Day. Players had to beat games and answer trivia questions in order to get ingredients for spring roll, an classic Tomb Sweeping Day dish.</p>
+                    </div>
+                </div>
+
+                <div class = info id = events> 
+                    <img src = "Images/Events/June 22.PNG" alt = "an illustration of an University of Michigan ID card with the ID photo being a bear in yellow michigan shirt" width = 350/>
+                    <div id="eventText">
+                        <h3>Class of 2026 Freshmen Info Session</h3>
+                         <p> Going to a foreign country alone to study can be scary, but TWSA is here to help! We tell you what to expect and answer any and all question that you may have. </p>
+                    </div>
+                </div>
+
+                <div class = freshmen id = events> 
+                    <img src = "Images/Events/july .jpg" alt = "illustration of two bears in a yellow michigan shirt toasting under yellow light" width = 350/>
+                    <div id="eventText">
+                        <h3>Freshmen Dinner</h3>
+                        <p>Usually takes place over the summer in Taiwan. This is a great opportunity for freshmen to meet each other and other UM studetns from Taiwan. </p>
+                    </div>
+                </div>
+
+                <div class = meeeting id = events> 
                     <img src = "Images/Events/Sept - mass.png" alt = "illustration of a personified silhouette of Taiwan holding a Taiwanese flag and a bubble tea" width = 350/>
-                    <h4>brief event intro </h4>
-            </div>
+                    <div id="eventText">
+                        <h3>Mass Meeting</h3>
+                        <p>Curious about TWSA? Mass meeting is for you! Learn about what TWSA is and what we do. Also meet TWSA members and potential TWSA members. </p>
+                    </div>
+                </div>
+
+                <div class = foodie id = events> 
+                    <img src = "Images/Events/Sept 2022.png" alt = "illustration of a gray bear sitting in a rice bucket filled with rice and a rice spoon sticking out" width = 350/>
+                    <div id="eventText">
+                        <h3>Foodie</h3>
+                        <p> TWSA's event for Autumn Festival, which is traditionally a time when family comes together and spend time with each other. Since we are all far from home, we had some fun together on the Hub deck. </p>
+                    </div>
+                </div>
+
+                <div class = wellness id = events> 
+                    <img src = "Images/Events/Nov .jpg" alt = "illustration of blue sky, two mountains, and a sheep leaping over a fence" width = 350/>
+                    <div id="eventText">  
+                        <h3>Mental Wellness Workshop</h3>
+                        <p> Recruiting season can be very, very stressful, and that's why a little self care is important. In a focus group led by a CAPS counselor, we talked about stress and ways to cope with it.  </p>
+                    </div>
+                </div>
             
+                <div class = wonderland id = events> 
+                    <img src = "Images/Events/Dec 22.jpg" alt = "graphic featuring a white mask made for Winter Wonderland Masquerade Party" width = 350/>
+                    <div id="eventText">
+                        <h3>Winter Wonderland Masquerade Party</h3>
+                        <p> An end of year, christmas themed event before everyone starts winter break. Participants chatted and ate dinner while making masquerade masks. We also watched football!  </p>
+                    </div>
+                </div>
+            </div>    
         </div>
     </main>
 </body>

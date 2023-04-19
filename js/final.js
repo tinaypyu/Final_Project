@@ -14,3 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("menu appear"); 
     })  
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("load2")
+    document.querySelector(".ham").addEventListener("focus", function() { 
+        console.log ("ham clicked"); 
+        document.querySelector(".ham").classList.toggle("active"); 
+        console.log("ham change"); 
+        document.querySelector(".nav").classList.toggle("active"); 
+        console.log("menu appear"); 
+    })  
+});
