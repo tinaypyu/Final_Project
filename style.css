@@ -1,0 +1,658 @@
+body { 
+    margin-top: 70px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* SKIP BUTTON  */
+.skip{ 
+    position: absolute; 
+    top: -10000px; 
+    font-family: "Candara", "Copperplate", "Garamond"; 
+        color: rgb(243, 243, 243); 
+    width:100%; 
+    padding: 2px 7  px 2px 7px;      
+    text-decoration: none;           
+}
+
+.skip:focus { 
+    position: static;   
+}
+
+/* NAV BAR */
+header { 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color:rgb(192, 191, 191); 
+    padding: 0px 5px 0px 0px; 
+}
+
+/* NAV ITEMS LIST */
+.navBar li{ 
+    list-style: none; 
+    margin: 5%; 
+}
+
+
+/* NAV ITEMS */
+.navBar a{ 
+    text-decoration: none; 
+    color:rgb(76, 75, 75); 
+    font-size: 15px; 
+}
+
+/* SIZING FOR LOGO */ 
+#headerImg { 
+    height: 50px; 
+}
+
+/* LAYOUT/ STYLING FOR NAV BAR */
+.navBar { 
+    display: flex; 
+    width: 98%; 
+    min-height: 70px; 
+    justify-content: space-between; 
+    align-items: center; 
+    top: 60px;
+}
+
+.navBar a:hover, a:focus{ 
+    padding: 0 0 2px 0; 
+    border-bottom: 1px  rgb(30, 34, 51) solid;
+    color:rgb(25, 29, 49); 
+}
+
+/* HAMBURGER ICON */
+.ham { 
+    display: block; 
+    cursor: pointer; 
+}
+
+.line{ 
+    display: block; 
+    width: 30px; 
+    height: 3px; 
+    margin: 5px 0; 
+    transition: all 0.5 ease-in-out; 
+    background-color: rgb(76, 75, 75); 
+}
+
+
+/* HAMBURGER TRANSITION */
+.ham.active .line:nth-child(2){ 
+    display: none; 
+}
+
+.ham.active .line:nth-child(1){ 
+    transform: translateY(5px) translateX(-4px) rotate(45deg)
+}
+
+.ham.active .line:nth-child(3){ 
+    transform: translateX(-5px) translateY(-3px) rotate(-45deg)
+}
+
+
+.nav{ 
+    position: fixed; 
+    width: 100%; 
+    height: 50%; 
+    flex-direction: column; 
+    background-color: rgb(192, 191, 191); 
+    text-align: center; 
+    top: 70px;
+    right: -100%; 
+    transition: 0.5s; 
+}
+
+.nav.active { 
+    right: 0%; 
+}
+
+/* NAV ITEM STYLING FOR CURRENT PAGE */
+.current { 
+    font-weight: bold; 
+    font-size: 17px; 
+    /* padding: 0 0 5px 0; 
+    border-bottom: 3px  black solid;  */
+}
+
+.current a{ 
+    color:rgb(30, 34, 51); 
+}
+
+/* HOMEPAGE TITLE */
+
+
+
+.twsaTitle { 
+    display: flex; 
+    height: 400px; 
+    background-color:rgb(192, 191, 191);  
+    align-items:center;     
+    justify-content: center;
+}
+
+.twsaTitle h1{ 
+    font-size: 2rem; 
+    text-align: center; 
+    font-family: "Gill Sans"; 
+    color:rgb(27, 32, 56); 
+   
+}
+
+/* HOMEPAGE GRID */
+.home{ 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(10, 1fr); 
+    justify-content: center; 
+}
+
+/* STYLING FOR HOME PAGE */
+.welcomeContainer{ 
+    grid-row: 1 / span 3; 
+}
+
+.whoContainer { 
+    grid-row: 4 / span 2; 
+    background-color:rgb(69, 108, 193); 
+}
+
+.whatContainer { 
+    grid-row: 6/ span 2; 
+    background-color:rgb(16, 59, 120); 
+}
+
+.mentorshipContainer { 
+    grid-row: 8 / span 3; 
+}
+
+.who, 
+.welcome, 
+.what, 
+.mentorship { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap:5%;  
+}
+
+.welcome h2, 
+.mentorship h2{ 
+    color:rgb(27, 32, 56); 
+    text-align: center; 
+    padding: 10px 0px 5px 0px;
+    font-family: "Optima"; 
+    font-size: 25px; 
+
+}
+
+
+.welcome p, 
+.mentorship p{ 
+
+    color: rgb(27, 32, 56); 
+    text-align: center; 
+    padding: 10px; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    line-height: 0.8cm;
+}
+
+
+.what p, 
+.who p { 
+    color: rgb(255, 254, 254); 
+    text-align: center; 
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    line-height: 0.8cm;
+
+}
+
+.what h2, 
+.who h2 { 
+    color: rgb(255, 255, 255); 
+    padding: 10px 0px 5px 0px; 
+    font-family: "Optima"; 
+    font-size: 20px; 
+}
+
+/* END OF STYLING FOR HOME PAGE */
+
+/* ----------------------------------------------- */
+
+/* h1 STYLING  */
+.eventContainer h1, 
+.festivalContainer h1, 
+.contactContainer h1  {
+    text-align: center; 
+    font-family: "Gill Sans"; 
+    color:rgb(27, 32, 56); 
+    font-size:50px; 
+    padding: 30px 0px 20px 0px; 
+}
+
+.eventContainer p, 
+.festivalContainer p, 
+.contactContainer p { 
+    color: rgb(27, 32, 56); 
+    text-align: center; 
+    padding: 10px; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    line-height: 0.8cm;
+}
+
+
+/* STYLING FOR EVENT PAGE */
+
+
+
+#events { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 2%;     
+}
+
+
+.eventContainer h2 { 
+    color: rgb(27, 32, 56); 
+    text-align: center; 
+    margin: 80px 20px 20px 20px; 
+    font-size:30px; 
+}
+
+.eventContainer h3, 
+.festivalContainer h2,
+.socials h2{ 
+    color:rgb(27, 32, 56); 
+    text-align: center; 
+    font-family: "Optima"; 
+    font-size: 20px; 
+}
+
+.events2022{ 
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 10fr;
+    grid-gap: 30px; 
+}
+
+.events2023{ 
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* STYLING EVENT BUTTONS */
+
+.yearEvent{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 30px; 
+    padding: 20px; 
+}
+
+.yearEvent a{ 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    text-decoration: none; 
+    background-color: rgb(182, 212, 233); 
+    color: rgb(27, 32, 56);     
+    padding: 5px 8px 5px 8px; 
+    border-radius: 10px; 
+}
+
+.yearEvent li{ 
+    list-style: none; 
+}
+
+
+.yearEvent a:hover, a:focus { 
+    border: 2px  rgb(30, 34, 51) solid;
+
+}
+
+/* END OF STYLING FOR EVENTS PAGE */
+/* ----------------------------------------------- */
+
+
+/* STYLING FOR FESTIVALS PAGE */
+
+/* styling for h2 and p are in above section */
+
+
+.festival{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    gap: 40px; 
+}
+
+.lunarImg, 
+.tombImg, 
+.dragonImg, 
+.autumnImg { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    gap: 15px;  
+}
+
+
+.festivalContainer h2{ 
+    margin: 10px 0px; 
+}
+
+/* END OF STYLING FOR FESTIVAL PAGE */
+/* ----------------------------------------------- */
+
+
+/* STYLING FOR CONTACT PAGE */
+
+.contactContainer{ 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 3fr ; 
+    grid-gap: 20px; 
+}
+
+.socials { 
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+#instagram, 
+#facebook, 
+#maize{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#instagram a,
+#maize a, 
+#facebook a { 
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px; 
+}
+
+
+#facebook a { 
+    color: rgb(27, 32, 56); 
+}
+
+#instagram a:hover,
+#maize a:hover, 
+#facebook a:hover, 
+#instagram a:focus,
+#maize a:focus, 
+#facebook a:focus{ 
+    font-weight: bold; 
+    margin-bottom: 3px; 
+    border-bottom: 2px solid; 
+}
+
+#instagram { 
+    background-color:rgb(69, 108, 193); 
+}
+
+#facebook { 
+    background-color:rgb(156, 180, 229); 
+
+}
+
+#maize { 
+    background-color:rgb(16, 59, 120); 
+}
+
+
+@media screen and (min-width: 768px){ 
+
+/* HOMEPAGE */
+
+.twsaTitle h1{ 
+    font-size: 3rem; 
+}
+
+.home{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2fr 2fr 2fr; 
+}
+
+
+/* STYLING FOR HOME PAGE */
+.welcomeContainer{ 
+    grid-row: 1 / span 1; 
+    grid-column: 1 / span 2; 
+}
+
+.whoContainer { 
+    grid-row: 2 / span 1;     
+    grid-column: 1 / span 1; 
+}
+
+.whatContainer { 
+    grid-row: 2/ span 1;     
+    grid-column: 2 / span 1; }
+
+.mentorshipContainer { 
+    grid-row: 3/ span 1; 
+    grid-column: 1 / span 2; 
+}
+
+
+
+.welcome h2, 
+.mentorship h2{ 
+    font-size: 35px; 
+    padding: 30px 0px 0px 0px; 
+}
+
+
+.welcome p, 
+.mentorship p,
+.what p, 
+.who p { 
+    font-size:18px; 
+    line-height: 1cm; 
+}
+
+
+.what h2, 
+.who h2 { 
+    font-size: 30px; 
+    padding: 20px 0px 0px 0px; 
+}
+/* STYLING FOR HOME PAGE END */
+
+
+/* ----------------------------------------------- */
+/* STYLING FOR EVENTS PAGE */
+
+#events { 
+
+    flex-direction: row;  
+}
+
+#eventText { 
+    display:flex; 
+    flex-direction: column; 
+    gap: 40px; 
+}
+
+.yearEvent { 
+    flex-direction: row; 
+    justify-content: space-around; 
+}
+
+/* STYLING FOR EVENTS PAGE END */
+
+
+/* STYLING FOR FESTIVAL PAGE */
+
+.lunar, 
+.dragon, 
+.autumn, 
+.tomb { 
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr; 
+}
+
+
+.festivalContainer h2{ 
+    margin: 30px 0px 20px 20px; 
+    font-size: 30px;
+}
+
+.festival{
+    align-items: flex-start;
+}
+/* STYLING FOR FESTIVAL PAGE END */
+
+.socials{ 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+}
+
+#instagram a,
+#maize a, 
+#facebook a { 
+    font-size: 25px; 
+}
+
+
+} 
+
+@media screen and (min-width: 1024px){ 
+
+/* STYLING FOR ABOUT PAGE */
+
+.nav a { 
+    font-size: 25px; 
+}
+
+.navBar a:hover, a:focus{ 
+    padding: 0 0 4px 0; 
+    border-bottom: 3px  rgb(30, 34, 51) solid;
+}
+
+.eventContainer p, 
+.festivalContainer p, 
+.contactContainer p, 
+.indexContainer p
+{
+    font-size: 25px; 
+    line-height: 2cm; 
+}
+
+.twsaTitle h1{ 
+    font-size: 4rem; 
+}
+
+.who, 
+.welcome, 
+.what, 
+.mentorship { 
+   width: 88%; 
+   margin:auto; 
+}
+
+/* STYLING FOR ABOUT PAGE END */
+
+
+/* STYLING FOR EVENTS PAGE */
+
+.events2022{ 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (6, 1fr);
+}
+
+.events2023{ 
+    grid-template-columns: 1fr 1fr;
+}
+
+#events { 
+    flex-direction: column;  
+    gap: 30px; 
+}
+
+#eventText { 
+    gap: 20px; 
+}
+
+.eventContainer h2{ 
+    font-size: 33px; 
+    padding: 0px 0px 20px 0px; 
+}
+
+.eventContainer h3{ 
+    font-size: 27px; 
+}
+
+
+
+.yearEvent a{ 
+    font-size: 25px; 
+}
+
+.yearEvent a:hover, a:focus { 
+    border-bottom: 2px  rgb(30, 34, 51) solid;
+}
+
+/* STYLING FOR FESTIVAL PAGE */
+
+.lunar, 
+.dragon, 
+.autumn, 
+.tomb { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr; 
+    margin: 0% 3% 0% 3%; 
+    row-gap: 20px; 
+}
+
+.lunarImg, 
+.tombImg,
+.dragonImg,
+.autumnImg { 
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.festival { 
+    align-items: center;    
+}
+
+
+#instagram a,
+#maize a, 
+#facebook a { 
+    font-size: 35px; 
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .indexContainer {
+      animation-play-state: paused;
+    }
+}
+
+/* LAYOUT/ STYLING FOR NAV ITEMS -- wide screen */
+/* .nav{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 25px; 
+} */
+
+
