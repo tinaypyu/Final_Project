@@ -537,6 +537,24 @@ header {
 
 /* STYLING FOR ABOUT PAGE */
 
+.nav a { 
+    font-size: 25px; 
+}
+
+.navBar a:hover, a:focus{ 
+    padding: 0 0 4px 0; 
+    border-bottom: 3px  rgb(30, 34, 51) solid;
+}
+
+.eventContainer p, 
+.festivalContainer p, 
+.contactContainer p, 
+.indexContainer p
+{
+    font-size: 25px; 
+    line-height: 2cm; 
+}
+
 .twsaTitle h1{ 
     font-size: 4rem; 
 }
@@ -581,10 +599,7 @@ header {
     font-size: 27px; 
 }
 
-.eventContainer p{ 
-    font-size: 20px; 
-    line-height: 1.2cm; 
-}
+
 
 .yearEvent a{ 
     font-size: 25px; 
